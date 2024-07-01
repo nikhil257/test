@@ -1,16 +1,16 @@
 let studObj1 = {
     id: 1,
-    name: 'Nikhil',
+    name: 'Smith',
     grades: 80,
 }
 let studObj2 = {
     id: 2,
-    name: 'Rohit',
+    name: 'John',
     grades: 90,
 }
 let studObj3 = {
     id: 3,
-    name: 'Danish',
+    name: 'Natasha',
     grades: 85,
 }
 
@@ -23,20 +23,20 @@ function addStudent(newStudent){
 
 function toDelete(deleteStd){
     let newId = deleteStd.id;
-    for(let i = 0; i < studentsArr.length; i++){
-        if(newId === studentsArr[i].id){;
-            studentsArr.splice(i, i)
+    for(let i = 0; i < studArr.length; i++){
+        if(newId === studArr[i].id){;
+            studArr.splice(i, i)
         }
     }
 
 
-    return studentsArr;
+    return studArr;
 }
 
 console.log(studArr)
 addStudent(studObj1);
 addStudent(studObj2)
 addStudent(studObj3)
-console.log(studentsArr)
+console.log(studArr)
 toDelete(studObj3);
 console.log(studArr);
